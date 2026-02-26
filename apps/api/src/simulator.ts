@@ -1,7 +1,7 @@
-﻿import type { Store } from "./store";
-import { transition } from "./orderMachine";
+﻿import type { Store } from "./store.js";
+import { transition } from "./orderMachine.js";
 import type { OrderStatus } from "@app/shared";
-import { SseHub } from "./sseHub";
+import { SseHub } from "./sseHub.js";
 
 export class StatusSimulator {
   private timersByOrderId = new Map<string, NodeJS.Timeout[]>();

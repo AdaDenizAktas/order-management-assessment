@@ -7,10 +7,10 @@ import {
   type Order,
   type OrderLineSnapshot
 } from "@app/shared";
-import { createStore } from "./store";
-import { computeTotals, transition } from "./orderMachine";
-import { SseHub } from "./sseHub";
-import { StatusSimulator } from "./simulator";
+import { createStore } from "./store.js";
+import { computeTotals, transition } from "./orderMachine.js";
+import { SseHub } from "./sseHub.js";
+import { StatusSimulator } from "./simulator.js";
 
 export function buildApp() {
   const app = express();

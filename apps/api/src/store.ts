@@ -1,5 +1,5 @@
 ﻿import type { MenuItem, Order } from "@app/shared";
-import { MENU } from "./menu";
+import { MENU } from "./menu.js";
 
 export type Store = {
   menuById: Map<string, MenuItem>;
