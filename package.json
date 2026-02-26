@@ -1,0 +1,13 @@
+{
+  "name": "order-management-assessment",
+  "private": true,
+  "packageManager": "pnpm@10.30.2",
+  "scripts": {
+    "dev:api": "pnpm --filter @app/api dev",
+    "dev:web": "pnpm --filter @app/web dev",
+    "test": "pnpm -r test",
+    "build": "pnpm -r build"
+  }
+}
+
+
