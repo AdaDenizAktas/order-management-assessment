@@ -54,7 +54,7 @@ export function OrderPage() {
   return (
     <Page title="Order Tracking">
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <Link to="/">ÃƒÂ¢Ã¢â‚¬Â Ã‚Â Menu</Link>
+        <Link to="/">Back to Menu</Link>
         <div style={{ fontWeight: 700 }}>Status: <span aria-live="polite">{status}</span></div>
       </div>
 
@@ -80,7 +80,7 @@ export function OrderPage() {
             <div style={{ marginTop: 8, display: "grid", gap: 6 }}>
               {shown.lines.map((l) => (
                 <div key={l.menuItemId} style={{ display: "flex", justifyContent: "space-between", gap: 12 }}>
-                  <div>{l.nameSnapshot} ÃƒÆ’Ã¢â‚¬â€ {l.quantity}</div>
+                  <div>{l.nameSnapshot} x {l.quantity}</div>
                   <div>{formatEUR(l.unitPriceSnapshot * l.quantity)}</div>
                 </div>
               ))}
