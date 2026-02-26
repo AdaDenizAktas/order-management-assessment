@@ -1,0 +1,5 @@
+﻿{
+  "installCommand": "npm i -g pnpm@10.30.2 && pnpm install --frozen-lockfile",
+  "buildCommand": "pnpm --filter @app/shared build && pnpm --filter @app/web build",
+  "outputDirectory": "apps/web/dist"
+}
