@@ -39,6 +39,9 @@ pnpm test
 - POST /api/orders/:id/status (manual advance; optional)
 - GET /api/orders/:id/events (SSE)
 
+### Vercel note
+Vercel expects a root-level `dist/` for static deployments; during Vercel builds we copy `apps/web/dist` → `dist/` (guarded by `process.env.VERCEL`).
+
 ## Loom outline (12–15 min)
 1) Requirement breakdown -> invariants (typed DTOs, state machine)
 2) Shared schemas -> validation on both sides
